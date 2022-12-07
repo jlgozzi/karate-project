@@ -8,29 +8,58 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.3/xlsx.full.min.js"
     ></script>
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href=".css/style/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=".css/style/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="conatiner mt-5">
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-3">
+
+
+        <div class="header">
           <input
-            class="form-control"
+            class="btn"
             type="file"
             id="input"
             accept=".xls,.xlsx"
           />
-        </div>
-        <div class="col-md-2">
+        
+     
           <button class="btn btn-primary" id="button">Convert</button>
+        
         </div>
-        <div class="col-md-12">
-          <pre id="jsondata"></pre>
+        <div class="keys">
+          <ul class="keys-list">
+            <h2>Chaveamento masculino acima de 18 anos</h2>
+            <ul class="masc" id="keys-list-masc-A"></ul>   
+            <h2>Chaveamento feminino acima de 18 anos</h2>
+            <ul class="fem" id="keys-list-fem-A"></ul> </ul>
+                   
+          <ul class="keys-list"><h2>Chaveamento masculino de 14 a 17 anos</h2>
+            <ul class="masc" id="keys-list-masc-B"></ul>  
+            <h2>Chaveamento feminino de 14 a 17 anos</h2> 
+            <ul class="fem" id="keys-list-fem-B"></ul> </ul> 
+            
+          <ul class="keys-list"> <h2>Chaveamento masculino de 10 a 13 anos</h2>
+            <ul  class="masc"id="keys-list-masc-C"></ul>   
+            <h2>Chaveamento feminino de 10 a 13 anos</h2>
+            <ul class="fem" id="keys-list-fem-C"></ul>  </ul> 
+             
+          <ul class="keys-list"> <h2>Chaveamento masculino de 6 a 9 anos</h2>
+            <ul class="masc" id="keys-list-masc-D"></ul>   
+            <h2>Chaveamento feminino de 6 a 9 anos</h2>
+            <ul class="fem" id="keys-list-fem-D"></ul> </ul> 
+             
+          <ul class="keys-list"> <h2>Chaveamento masculino abaixo de 5 anos</h2>
+            <ul class="masc" id="keys-list-masc-E"></ul>   
+            <h2>Chaveamento feminino abaixo de 5 anos</h2>
+            <ul class="fem" id="keys-list-fem-E"></ul></ul>   
+            
         </div>
-      </div>
-    </div>
+
+  
     <script type="module" src="./index.js"></script>
   </body>
 </html>
